@@ -1,0 +1,215 @@
+.navbar_menu_list, .navbar_menu, .navbar-logo:hover, .navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_bars:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.navbar-logo {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+  color: #222222;
+}
+.navbar_bars {
+  opacity: 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .navbar_bars {
+    color: #222222;
+    opacity: 1;
+    position: absolute;
+    font-size: 20px;
+    right: 20px;
+  }
+}
+.navbar_menu {
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .navbar_menu {
+    display: none;
+  }
+}
+.navbar_menu_list {
+  list-style-type: none;
+}
+.navbar_menu_list_item {
+  margin-left: 10px;
+  padding: 1px 0;
+}
+.navbar_menu_list_item-link {
+  text-decoration: none;
+  color: rgb(10, 130, 30);
+  transition: 0.3s ease-in;
+  font-size: 17px;
+}
+.navbar_menu_list_item-link:hover {
+  font-size: 18px;
+  color: #fb4f4f;
+}
+.navbar_menu_list_item #button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(10, 130, 30);
+  color: #f7f7f7;
+}
+.navbar_menu_list_item #button:hover {
+  background-color: #fb4f4f;
+}
+
+.showcase_container_left_signup::before, .showcase_container_left_signup::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  background-color: #fb4f4f;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.showcase {
+  background-color: #f7f7f7;
+}
+.showcase_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+@media screen and (max-width: 768px) {
+  .showcase_container {
+    grid-template-columns: 1fr;
+    height: 90%;
+  }
+}
+.showcase_container_left {
+  width: 100%;
+  color: rgb(10, 130, 30);
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .showcase_container_left {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 546px) {
+  .showcase_container_left {
+    line-height: 1.5;
+  }
+}
+.showcase_container_left h1 {
+  font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+  .showcase_container_left h1 {
+    font-size: 20px;
+  }
+}
+.showcase_container_left h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #222222;
+}
+@media screen and (max-width: 546px) {
+  .showcase_container_left h2 {
+    font-size: 20px;
+  }
+}
+.showcase_container_left p {
+  font-size: 20px;
+  color: #222222;
+  margin-top: 10px;
+  font-weight: 700;
+}
+@media screen and (max-width: 546px) {
+  .showcase_container_left p {
+    font-size: 1.4rem;
+  }
+}
+.showcase_container_left_signup {
+  font-size: 10px;
+  background-color: rgb(10, 130, 30);
+  padding: 15px 30px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  outline: none;
+}
+.showcase_container_left_signup a {
+  color: #f7f7f7;
+  z-index: 2;
+  position: relative;
+  text-decoration: none;
+  font-size: 19px;
+}
+.showcase_container_left_signup::after {
+  right: 50%;
+}
+.showcase_container_left_signup::before {
+  left: 50%;
+}
+.showcase_container_left_signup:hover::after {
+  width: 50%;
+}
+.showcase_container_left_signup:hover::before {
+  width: 50%;
+}
+.showcase_container_right img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+footer {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+footer address a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  footer address a {
+    font-size: 15px;
+  }
+}
+footer address a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,109 @@
+@import 'colors';
+@import 'media-queries';
+@import 'constants';
+
+
+%aling-center{
+    display: flex;
+    align-items: center;
+
+}
+
+%hover-item{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha:0.7);
+    //font-size: 30px;
+
+    &-logo{
+       
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 20px;
+        color: $dark;
+        @extend %aling-center;
+
+        &:hover{
+            @extend %aling-center;
+        }
+    }
+
+    &_bars{
+        opacity: 0;
+        cursor: pointer;
+
+        @include tablet{
+            color: $dark;
+            opacity: 1;
+            position: absolute;
+            
+            font-size: 20px;
+            right: 20px;
+        }
+
+        &:hover{
+            @extend %hover-item;
+        }
+    }
+    &_menu{
+        margin-right: 20px;
+        @extend %aling-center;
+
+        @include tablet{
+            display: none;
+        }
+        &_list{
+            @extend %aling-center;
+            list-style-type: none;
+            
+
+            &_item{
+                margin-left: 10px;
+                padding: 1px 0;
+
+                &-link{
+                    text-decoration: none;
+                    color: $lime;
+                    transition: .3s ease-in;
+                    font-size: 17px;
+
+                    &:hover{
+                        font-size: 18px;
+                        color: $orangeRed;
+                    }
+                }
+
+                #button{
+                    padding: 10px 20px;
+                    border: none;
+                    outline: none;
+                    border-radius: $borderRadius;
+                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Roboto', sans-serif;
+                    background-color: $lime;
+                    color: $light;
+
+                    &:hover{
+                        background-color: $orangeRed;
+                    }
+                   
+                }
+               
+            }
+        }
+
+
+}
+
+}
+    
